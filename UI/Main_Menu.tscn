@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/HyperspaceBold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/CarterOne-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/Main_Menu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Game background.jpg" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 24
@@ -15,6 +16,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
 
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.395312, 0.365625 )
+texture = ExtResource( 3 )
+centered = false
+
 [node name="Background" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,7 +28,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = -10.0
 margin_bottom = -10.0
-color = Color( 0, 0, 0, 0.25098 )
+color = Color( 0.231373, 1, 0.0156863, 0.25098 )
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0

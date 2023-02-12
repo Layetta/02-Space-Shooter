@@ -6,7 +6,10 @@ var score = 0
 var time = 0
 var lives = 0
 
+
+
 func _ready():
+	OS.window_position = Vector2(100,100)
 	randomize()
 	pause_mode = Node.PAUSE_MODE_PROCESS
 	VP = get_viewport().size
@@ -58,5 +61,5 @@ func update_lives(l):
 
 func reset ():
 	score = 0
-	time = 30
-	lives = 5
+	time = 75
+	lives = 3

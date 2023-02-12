@@ -41,10 +41,17 @@ func get_input():
 	if Input.is_action_pressed("forward"):
 		to_return.y -= 1
 		$Exhaust.show()
+	if Input.is_action_pressed("ui_up"):
+		to_return.y -= 1
+		$Exhaust.show()
 	if Input.is_action_pressed("left"):
 		rotation_degrees = rotation_degrees - rotation_speed
 	if Input.is_action_pressed("right"):
 		rotation_degrees = rotation_degrees + rotation_speed
+	if Input.is_action_pressed("ui_left"):
+		rotation_degrees = rotation_degrees - rotation_speed
+	if Input.is_action_pressed("ui_right"):
+		rotation_degrees = rotation_degrees + rotation_speed	
 	return to_return.rotated(rotation)
 	
 func damage(d):
