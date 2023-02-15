@@ -6,7 +6,7 @@ Description
 ## Implementation 
   Created using Godot
 ## References
-  Some original Sprites, Google image search (Background)
+  7 original Sprites, Google image search (Background), Music: Purcell-The_Indian_queen, Font: CarterOne-Regular.ttf, added asteroids
 ## Future Development
   I would like to expand on this game in the future.
 ## Created by
